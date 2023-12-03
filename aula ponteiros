@@ -1,0 +1,60 @@
+PONTEIROS:
+
+- ponteiros são usados para acessar endereços de memória;
+- são usados para manipular os dados de forma maias eficiente;
+
+DECLARAÇÃO DE PONTEIROS:
+
+int * point;
+
+IMPRIMINDO UM PONTEIRO:
+
+printf("O ponteiro: %p /n", point);
+
+-- %p é como se fosse o %d.
+
+INDIREÇÃO DE PONTEIROS COM O *:
+
+se usar o operador *, é possível fazer com que o ponteiro receba o valor de uma variável, permitindo acesso direto ao seu valor.
+
+floar var = 3,14;
+float *point = &var;
+float pi = *point;
+*point = 1,31456;
+
+
+PONTEIRO NULL:
+
+não aponta a nenhum objeto, geralmente é usado para indicar ausência de um valor;
+
+#include<std.lib>
+char *point;
+point = NULL;
+
+ARITMETICA EM PONTEIROS:
+
+soma: p+2
+subtração: p-3
+incremento: ++p ou p++
+decremento: --p ou p--
+subtração entre ponteiros do mesmo tipo: p-p2
+
+ex1.:
+
+int *pointer;
+pointer+3; //vai avançar de certa forma 3 endereços do inicial
+
+ex2. dizer se as expressões abaixo são legais ou ilegais:
+
+long *p1, *p2;
+int j;
+char *p3;
+
+p2 = p1 + 4;
+j = p2 - p1; (legal, dá igual a 4, não foi atribuído um valor ao p1)
+j = p1 - p2; (legal, dá -4)
+p1 = p2 - 2; (legal, os ponteiros são compatíveis)
+p3 = p1 - 1; (legal, mas os ponteiros não são compatíveis)
+j = p1 - p3; (ilegal, a operação de subtração não é compatível)
+
+SÓ É POSSÍVEL REALIZAR OPERAÇÕES ENTRE PONTEIROS SE ELES FOREM DO MESMO TIPO!!!
