@@ -1,0 +1,11 @@
+p1 = &y //armazena o endereço da variavel
+-- ponteiros fornecem de certa forma o acesso indireto de Y;
+
+
+-- ponteiro de funções: uma variavel que armazena o endereço de uma função
+
+- int *ponteiro_int
+- float *ponteiro_float
+- char *ponteiro_char
+- int **ponteiro_ponteiro
+- int (*ponteiro)(int, int) //ponteiros de funções
