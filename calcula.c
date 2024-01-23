@@ -21,7 +21,6 @@ int calcula(int x, int y, int (*operacao)(int, int))
     return (*operacao)(x, y);
 }
 void print_Menu(){
-    vo
 }
 int main()
 {
